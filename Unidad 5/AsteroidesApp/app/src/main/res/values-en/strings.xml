@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AsteroidesApp</string>
+    <string name="nombreJuego">Juego Asteroides</string>
+    <string name="Arrancar">Play</string>
+    <string name="Configurar">Setting</string>
+    <string name="Acercade">About...</string>
+    <string name="Salir">Quit</string>
+    <string name="action_Settings">Configuracion</string>
+    <string name="Puntuaciones">Puntuations</string>
+</resources>
