@@ -23,7 +23,8 @@
         android:id="@+id/btn1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/Arrancar" />
+        android:text="@string/Arrancar"
+        android:onClick="lanzarJuego"/>
 
     <Button
         style="@style/MiEstiloBtn.Grande.Italic"

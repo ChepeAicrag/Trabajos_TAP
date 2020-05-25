@@ -10,9 +10,10 @@ import android.widget.Button;
 import java.util.Vector;
 
 public class MainActivity extends AppCompatActivity {
-    private Button bAcercaDe;
-    private Button bSalir;
-    private Button btnPreferencias;
+    private Button bAcercaDe,
+                   bSalir,
+                   btnPreferencias,
+                   btnJugar;
     public static AlmacenPuntuaciones almacen = new AlmacenPuntuacionesArray();
 
 
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         bAcercaDe = findViewById(R.id.btn3);
         bSalir = findViewById(R.id.btn4);
         btnPreferencias = findViewById(R.id.btn2);
+        btnJugar = findViewById(R.id.btn1);
         bAcercaDe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -40,6 +42,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 lanzarPreferences(v);
+            }
+        });
+        btnJugar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                lanzarJuego(v);
             }
         });
     }
@@ -62,4 +70,8 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+    public void lanzarJuego(View v){
+        Intent i = new Intent(this,Juego.class);
+        startActivity(i);
+    }
 }

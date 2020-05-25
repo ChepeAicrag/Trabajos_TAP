@@ -29,6 +29,11 @@
             android:label="Puntuaciones..."
             android:theme="@style/AppTheme">
         </activity>
+        <activity
+            android:name=".Juego"
+            android:label="Juego"
+            android:theme="@style/AppTheme">
+        </activity>
     </application>
 
 
