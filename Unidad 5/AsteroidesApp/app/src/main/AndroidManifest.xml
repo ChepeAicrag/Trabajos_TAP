@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.asteroidesapp">
 
     <application
@@ -32,7 +33,10 @@
         <activity
             android:name=".Juego"
             android:label="Juego"
-            android:theme="@style/AppTheme">
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:screenOrientation="landscape"
+            tools:ignore="LockedOrientationActivity"
+            android:hardwareAccelerated="false">
         </activity>
     </application>
 
