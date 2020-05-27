@@ -4,11 +4,13 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.ColorFilter;
 import android.graphics.Paint;
 import android.graphics.Path;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.PathShape;
+import android.graphics.drawable.shapes.RectShape;
 import android.preference.PreferenceManager;
 import android.util.AttributeSet;
 import android.view.View;
@@ -31,7 +33,7 @@ public class VistaJuego extends View {
         Drawable drawableNave, drawableAsteroide, drawableMisil;
         /** Asteroide con grafico */
         //drawableAsteroide = context.getResources().getDrawable(R.drawable.asteroide1);
-        /** Asteroide con grafico vectorial */
+        /** Asteroide, misil y nave con grafico vectorial */
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(getContext());
         if ((pref.getString("graficos","1")).equals("0")){
             /** Inicio para el asteroide */
@@ -55,7 +57,10 @@ public class VistaJuego extends View {
             dAsteroide.setIntrinsicWidth(50);
             dAsteroide.setIntrinsicHeight(50);
             drawableAsteroide = dAsteroide;
-            /** Fin para el asteroide */
+            /**
+            * Fin para el asteroide
+            * Inicio para la nave
+            * */
             Path pathNave = new Path();
             pathNave.moveTo((float) 0.0, (float) 0.0);
             pathNave.lineTo((float) 1.0, (float) 0.5);
@@ -67,11 +72,23 @@ public class VistaJuego extends View {
             dNave.setIntrinsicHeight(12);
             dNave.setIntrinsicWidth(20);
             drawableNave = dNave;
+            /**
+             * Fin para la nave
+             * Inicio para el misil
+             * */
+            ShapeDrawable dMisil = new ShapeDrawable(new RectShape());
+            dMisil.getPaint().setColor(Color.WHITE);
+            dMisil.getPaint().setStyle(Paint.Style.STROKE);
+            dMisil.setIntrinsicWidth(15);
+            dMisil.setIntrinsicHeight(3);
+            drawableMisil = dMisil;
+            /** Fin para el dibujo de misil en forma vectorial*/
             setBackgroundColor(Color.BLACK);
             setLayerType(View.LAYER_TYPE_SOFTWARE, null);
         }else{
             drawableAsteroide = context.getResources().getDrawable(R.drawable.asteroide1);
             drawableNave = context.getResources().getDrawable(R.drawable.nave);
+            drawableMisil = context.getResources().getDrawable(R.drawable.misil1);
             setLayerType(View.LAYER_TYPE_HARDWARE,null);
         }
         /** ----- */
