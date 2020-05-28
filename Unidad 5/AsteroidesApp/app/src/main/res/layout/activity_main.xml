@@ -51,5 +51,13 @@
         android:onClick="lanzarPuntuaciones"
         android:text="@string/Puntuaciones" />
 
+    <Button
+        style="@style/MiEstiloBtn.Grande.Italic"
+        android:id="@+id/btn5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="salirApp"
+        android:text="@string/Salir" />
+
 
 </LinearLayout>

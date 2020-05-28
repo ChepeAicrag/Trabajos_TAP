@@ -13,29 +13,28 @@ import android.widget.TextView;
 import java.util.Vector;
 
 public class MainActivity extends AppCompatActivity {
-    private Button bAcercaDe,
-                   bSalir,
-                   btnPreferencias,
-                   btnJugar;
+    private Button btnAcercaDe, btnPuntuacion, btnPreferencias, btnJugar, btnSalir;
+    private TextView tituloApp;
+    private Animation giro, aparecer, desplazamiento;
     public static AlmacenPuntuaciones almacen = new AlmacenPuntuacionesArray();
-
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        bAcercaDe = findViewById(R.id.btn3);
-        bSalir = findViewById(R.id.btn4);
-        btnPreferencias = findViewById(R.id.btn2);
         btnJugar = findViewById(R.id.btn1);
-        bAcercaDe.setOnClickListener(new View.OnClickListener() {
+        btnPreferencias = findViewById(R.id.btn2);
+        btnAcercaDe = findViewById(R.id.btn3);
+        btnPuntuacion = findViewById(R.id.btn4);
+        btnSalir = findViewById(R.id.btn5);
+        btnAcercaDe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 lanzarAcercaDe(v);
             }
         });
-        bSalir.setOnClickListener(new View.OnClickListener() {
+        btnPuntuacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 lanzarPuntuaciones(null);
@@ -53,14 +52,24 @@ public class MainActivity extends AppCompatActivity {
                 lanzarJuego(v);
             }
         });
-        TextView tituloApp = findViewById(R.id.TituloApp);
-        Animation animation = AnimationUtils.loadAnimation(this,R.anim.giro_con_zoom),
-                  animation2 = AnimationUtils.loadAnimation(this,R.anim.aparecer);
-        tituloApp.startAnimation(animation);
-        btnJugar.startAnimation(animation2);
+        btnSalir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                salirApp(v);
+            }
+        });
+        tituloApp = findViewById(R.id.TituloApp);
+        giro = AnimationUtils.loadAnimation(this,R.anim.giro_con_zoom);
+        aparecer = AnimationUtils.loadAnimation(this,R.anim.aparecer);
+        desplazamiento = AnimationUtils.loadAnimation(this,R.anim.desplazamiento_derecha);
+        tituloApp.startAnimation(giro);
+        btnJugar.startAnimation(aparecer);
+        btnPreferencias.startAnimation(desplazamiento);
+
     }
 
     public void lanzarAcercaDe(View view){
+        btnAcercaDe.startAnimation(giro);
         Intent i = new Intent(this,AcercaDe.class);
         startActivity(i);
     }
