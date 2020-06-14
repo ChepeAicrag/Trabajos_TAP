@@ -5,27 +5,23 @@
     android:gravity="center"
     android:orientation="vertical"
     android:padding="30dp">
-
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/TituloApp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="@string/nombreJuego"
         android:textSize="25sp" />
-
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:stretchColumns='"*"'>
-
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center">
-
             <Button
                 android:id="@+id/btn1"
                 style="@style/Widget.AppCompat.Button"
@@ -33,9 +29,8 @@
                 android:layout_height="wrap_content"
                 android:text="@string/Arrancar"
                 android:onClick="lanzarJuego"/>
-
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btn2"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -49,7 +44,7 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/btn3"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -57,12 +52,20 @@
                 android:text="@string/Acercade" />
 
             <Button
-                android:id="@+id/button4"
+            android:id="@+id/btn4"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="lanzarPuntuaciones"
+            android:text="@string/Puntuaciones" />
+
+            <Button
+                android:id="@+id/btn5"
                 style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:onClick="lanzarPuntuaciones"
-                android:text="@string/Puntuaciones" />
+                android:onClick="salirApp"
+                android:text="@string/Salir" />
         </TableRow>
 
     </TableLayout>
