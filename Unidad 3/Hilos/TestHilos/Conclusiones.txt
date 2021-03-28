@@ -1,0 +1,7 @@
+Al hacer el uso de los jilos, permite optimizar de mejor manera los recursos con los cuales 
+contamos en nuestra compuradora, al hacer el ejemplo de los factoriales, queda claro que 
+al estar haciendo la ejecucion de un solo proceso, este demora más a compracion de hacerlos
+separados mediante dos hilos.
+Cabe resaltar que en numeros pequeños, ambos brindan un buen rendimiento, pero para números más grandes, 
+se nota la optimizacion del tiempo.
+Se anexan las pruebas realizadas, con numeros pequeños y numeros muy grandes
