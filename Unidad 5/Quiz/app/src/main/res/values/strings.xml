@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name" translatable="false">¿Sabes de reciclaje? Descubramoslo!</string>
+    <string name="question">Question</string>
+    <string name="check">Check</string>
+    <string name="correct">Very good!</string>
+    <string name="incorrect">Incorrect...</string>
+    <string name="next">Next</string>
+    <string name="finish">Finish</string>
+    <string name="prev">Previous</string>
+    <string name="results">Results</string>
+    <string name="start_over">Start Over</string>
+    <array name="all_questions">
+        <item>¿Cuál de estas acciones no pertenece a la regla de las 3 erres de la sostenibilidad?;Reducir;*Respetar;Reciclar;Reutilizar</item>
+        <item>¿Cuál de estos colores no pertenece a un contenedor de reciclaje?;Amarillo;Verde;*Negro;Naranja</item>
+        <item>¿Sabes para qué se utiliza el contenedor rojo?;*Pilas y desechos peligrosos;Aceites e insecticidas;*Las dos respuestas anteriores son correctas; Ninguna de las anteriores</item>
+        <item>¿Sabes cuánto tarda, de media, en degradarse una botella de plástico?;20 años;120 años;*700 años;80 años</item>
+        <item>¿Sabes a qué contenedor deberías tirar los bricks?;*Amarillo;Verde;Azul;Rosa</item>
+        <item>¿Y qué pasa con las latas, sabes qué contenedor les corresponde?;*Amarillo;Verde;Azul;Rosa</item>
+        <item>¿De qué color es el contenedor destinado al reciclaje del papel y el cartón?;Amarillo;Verde;*Azul;Naranja</item>
+        <item>Las baterías, los teléfonos móviles, ordenadores y otros electrodomésticos o aparatos electrónicos, poseen entre sus componentes elementos altamente contaminantes como el litio y otros metales pesados. ¿Sabes dónde debes depositarlos cuando ya no son útiles?;En el contenedor gris;*En un punto limpio;En el contenedor de desechos generales;Ninguna de las anteriores</item>
+        <item>¿Sabes cuál de estos objetos no deben tirarse en el contenedor de vidrio?;Un vaso;Una bombilla;*Ambos;Ninguno de esos</item>
+        <item>Con el reciclado de 3 botellas de vidrio...;Evitamos la emisión de 1 kilogramo de CO2 a la atmósfera;Reducimos 1 kilogramo de basura que va al vertedero;*Ahorramos más de 1 kilogramo de materia prima;*Todas las respuestas anteriores son correctas</item>
+        <item> ¿Cuál de los siguientes objetos debes llevar a un punto verde de reciclado?;*Papel kraft;Botes de gel de baño;Bombillas;Botellas de lejía</item>
+        <item>Por cada tonelada de papel reciclado, estamos salvando _______ árboles.;*6 árboles;17 árboles;9 árboles;30 árboles</item>
+        <item>¿Sabes a qué contenedor deberías tirar la lata de atún?;*Amarillo;Verde;Azul;Rosa</item>
+        <item>¿Sabes a qué contenedor deberías tirar un tapón de corcho sintético?;*Amarillo;Verde;Azul;Rosa</item>
+        <item>Estás preparando un batido de fresas y de repente… ¡se te rompe un vaso! ¿Qué debes hacer con él?;Depositarlo en el contenedor verde;Depositarlo en el contenedor amarillo;Depositarlo en el contenedor gris o llevarlo a un punto limpio;Ninguna de las anteriores</item>
+        <item>¿Dónde se deben tirar las pilas cuando termina su vida útil?;¿Pilas? Ni idea;Al contenedor gris;*Punto limpio o puntos de recogida;Al contenedor verde</item>
+        <item>¿Cuándo es el día mundial del reciclaje?;*17 de Mayo;5 de Julio;14 de Marzo ;16 de Mayo</item>
+        <item>¿Qué se mete en un contenedor azul?;Vidrio;Residuos Orgánicos;*Papel y cartón;Envases de Plástico</item>
+        <item>¿Qué se mete en un contenedor verde?;*Vidrio;Residuos Orgánicos;Papel y cartón;Envases de Plástico</item>
+        <item>¿Qué se mete en un contenedor verde?;Vidrio;Residuos Orgánicos;Papel y cartón;*Envases de Plástico</item>
+        <item>¿Cuáles de los siguientes objetos no se puede reciclar?;Cristal Rojo;Comida;Cartón roto;*Electrodomésticos</item>
+        <item>¿Cuánto tarda en degradarse una botella de plástico?;100 años;1 semana;5 años;*450 años</item>
+        <item>¿Cuánto tarda en degradarse una lata de referescos?;3 años;*200 años;30 años;450 años</item>
+        <item>¿Cuáles de las siguientes afirmaciones es cierta?;*El desodorante de spray van al contenedor amarillo;Los CDs van al contenedor amarillo;Las colillas van al contenedor azul;Ninguna de las anteriores</item>
+        <item>¿En el aire se quedan algunos desechos?;No se van todos;Sólo algunos gases;Los olores y los contaminantes de las fábricas, el tráfico y entre otras cosas;No tengo idea</item>
+        <item>Por no reciclar correctamente estamos destruyendo los océanos y mares, ¿sabes cual es la cantidad de plástico que llega a los mares al año?;1 y 2,5 millones de toneladas al año;*4,8 y 12, 7 millones de toneladas cada año;Menos de 5 toneladas al año;Ninguna de los anteriores</item>
+        <item>¿Cuánto tiempo tarda en degradarse una colilla de cigarrillo?;*La combinación de componentes de la colilla hace que su tiempo de degradación oscile entre uno y diez años;La combinación de alquitrán y químicos hacen que la degradación oscile entre uno y dos años;Los componentes de la colilla de cigarro hacen que su tiempo de degradación oscile entre uno y tres años;2 años</item>
+        <item>LA UNESCO DECLARÓ EL DÍA INTERNACIONAL DEL RECICLAJE CON EL OBJETIVO DE;Entender que con el reciclaje se aprovecha la basura;*Comprender que el reciclaje debe ser un proceso habitual en la vida;Comprender la importancia de reducir la contaminación del planeta;No tengo idea</item>
+        <item>¿Cuántos tipos de residuos generamos en nuestro hogar?;Orgánicos, recuperables, no recuperables;Orgánicos y recuperables;Orgánicos;*Orgánicos, recuperables, no recuperables, peligros biocontaminados y no biocontaminados</item>
+        <item>¿Dónde tiro las capsulas de café o bolsas de té?;*Al contenedor de resto (marrón/naranja);Al contenedor amarillo;Al contenedor rosa;Al contenedor gris</item>
+    </array>
+</resources>
